@@ -15,5 +15,11 @@
 // -----------------------------------------------------------
 
 function wrap(value) {
+  return {"value" : value};
+}
+
+// or
+
+function wrap(value) {
   return {value};
 }
