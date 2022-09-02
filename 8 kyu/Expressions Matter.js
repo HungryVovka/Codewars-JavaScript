@@ -67,6 +67,7 @@ function expressionMatter(a, b, c) {
     a * (b + c), 
     a * b * c, 
     (a + b) * c,
+    a * b + c,
   ];
   return Math.max.apply(null, combinations);
 }
