@@ -23,3 +23,16 @@ function alphabetPosition(text) {
   });
   return replaced.join(" ");
 }
+
+// or
+
+function alphabetPosition(text) {
+  var answer = "";
+  for (let i = 0; i < text.length; i++){
+    let j = text.toUpperCase().charCodeAt(i);
+    if (j > 64 && j < 91){
+      answer += (j - 64) + " ";
+    }
+  }
+  return answer.slice(0, answer.length - 1);
+}
