@@ -15,5 +15,5 @@
 // -----------------------------------------------------------
 
 var ArrowFunc = function(arr) {
-  return arr.map(number => String.fromCharCode(number)).join('');
+  return arr.map(number => String.fromCharCode(number)).join("");
 }
