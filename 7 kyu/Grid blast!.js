@@ -31,3 +31,12 @@ var grid = ["top left", "top middle", "top right",
 function fire(x,y){
   return grid[x + y * 3];
 }
+
+// or
+
+function fire(x,y){
+  let grid = [["top left", "top middle", "top right"],
+              ["middle left", "center", "middle right"],
+              ["bottom left", "bottom middle", "bottom right"]];
+  return grid[y][x];
+}
