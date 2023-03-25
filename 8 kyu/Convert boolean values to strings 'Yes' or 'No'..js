@@ -3,9 +3,15 @@
 // -----------------------------------------------------------
 
 function boolToWord(boolian){
-  if (boolian == true){
-    return('Yes');
-  } else if (boolian == false){
-    return('No');
-  }
+    if (boolian == true){
+        return('Yes');
+    } else if (boolian == false){
+        return('No');
+    }
+}
+
+// or
+
+function boolToWord(bool){
+  return bool === false ? 'No' : 'Yes';
 }
