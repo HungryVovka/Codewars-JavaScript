@@ -44,6 +44,6 @@
 // -----------------------------------------------------------
 
 String.prototype.toString = function(){
-  let dataInput = this;
-  return new String(dataInput);
+	let dataInput = this;
+	return new String(dataInput);
 }
