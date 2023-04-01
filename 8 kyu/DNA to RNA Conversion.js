@@ -15,11 +15,17 @@
 // consist of 'G', 'C', 'A' and/or 'T'.
 // -----------------------------------------------------------
 
-function DNAtoRNA(dna) {
-  var rna = {
-    "T": "U"
-  }
-  return dna.replace(/T/g, function(convers){
-    return rna[convers];
-  });
+function DNAtoRNA(dna){
+    var rna = {
+        "T": "U"
+    }
+    return dna.replace(/T/g, function(convers){
+        return rna[convers];
+    });
+}
+
+// or
+
+function DNAtoRNA(dna){
+    return dna.replaceAll("T", "U");
 }
