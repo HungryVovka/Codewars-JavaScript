@@ -18,10 +18,10 @@
 // -----------------------------------------------------------
 
 function calculate1RM(w, r){
-  if (w == 0 || r == 0){return 0};
-  if (r == 1){return w};
-  var epley = w * (1 + r / 30);
-  var mc_glothin = (100 * w) / (101.3 - 2.67123 * r);
-  var lombardi = w * r**0.1;
-  return Math.round(Math.max(epley, mc_glothin, lombardi));
+    if (w == 0 || r == 0){return 0};
+    if (r == 1){return w};
+    var epley = w * (1 + r / 30);
+    var mc_glothin = (100 * w) / (101.3 - 2.67123 * r);
+    var lombardi = w * r**0.1;
+    return Math.round(Math.max(epley, mc_glothin, lombardi));
 }

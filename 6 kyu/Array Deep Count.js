@@ -16,31 +16,31 @@
 // -----------------------------------------------------------
 
 function deepCount(a){
-  var arr = [...a], answer = 0;
-  while (arr.length){
-    let b = arr.pop();
-    answer += 1;
-    if (Array.isArray(b)){
-      arr.push(...b);
+    var arr = [...a], answer = 0;
+    while (arr.length){
+        let b = arr.pop();
+        answer += 1;
+        if (Array.isArray(b)){
+            arr.push(...b);
+        }
     }
-  }
-  return answer;
+    return answer;
 }
 
 // or
 
 function deepCount(a){
-  var answer = a.length;
-  for (let i of a){
-    if (Array.isArray(i)){
-      answer += deepCount(i);
+    var answer = a.length;
+    for (let i of a){
+        if (Array.isArray(i)){
+            answer += deepCount(i);
+        }
     }
-  }
-  return answer;
+    return answer;
 }
 
 // or
 
 function deepCount(a){
-  return a.reduce((b, c) => b + (Array.isArray(c) ? deepCount(c) : 0), a.length);
+    return a.reduce((b, c) => b + (Array.isArray(c) ? deepCount(c) : 0), a.length);
 }

@@ -10,6 +10,6 @@
 // arrayDiff([1,2,2,2,3],[2]) == [1,3]
 // -----------------------------------------------------------
 
-function arrayDiff(a, b) {
-  return a.filter(a_number => !b.includes(a_number));
+function arrayDiff(a, b){
+    return a.filter(a_number => !b.includes(a_number));
 }

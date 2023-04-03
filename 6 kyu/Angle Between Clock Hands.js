@@ -16,8 +16,8 @@
 // -----------------------------------------------------------
 
 function handAngle (date) {
-  var minute = date.getMinutes()/60;
-  var hour = (date.getHours() + minute) / 12;
-  var angle = Math.abs(hour - minute) * Math.PI * 2;
-  return Math.min(angle, Math.PI * 2 - angle);
+    var minute = date.getMinutes()/60;
+    var hour = (date.getHours() + minute) / 12;
+    var angle = Math.abs(hour - minute) * Math.PI * 2;
+    return Math.min(angle, Math.PI * 2 - angle);
 }
