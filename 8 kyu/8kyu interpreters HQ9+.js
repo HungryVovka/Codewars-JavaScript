@@ -26,7 +26,7 @@
 // -----------------------------------------------------------
 
 function BottlesOfBeer(){
-  return `99 bottles of beer on the wall, 99 bottles of beer.
+	return `99 bottles of beer on the wall, 99 bottles of beer.
 Take one down and pass it around, 98 bottles of beer on the wall.
 98 bottles of beer on the wall, 98 bottles of beer.
 Take one down and pass it around, 97 bottles of beer on the wall.
@@ -229,34 +229,55 @@ Go to the store and buy some more, 99 bottles of beer on the wall.`;
 }
 
 function HQ9(code) {
-  return code == "H" ? "Hello World!" : 
-  code == "Q" ? code : 
-  code == "9" ? BottlesOfBeer() : 
-  undefined;
+	return code == "H" ? "Hello World!" : 
+	code == "Q" ? code : 
+	code == "9" ? BottlesOfBeer() : 
+	undefined;
 }
 
 // or
 
 function BottlesOfBeer(beer) {
-  if (beer == 2) {
-    return "2 bottles of beer on the wall, 2 bottles of beer.\n" +
-      "Take one down and pass it around, 1 bottle of beer on the wall.\n" +
-      "1 bottle of beer on the wall, 1 bottle of beer.\n" +
-      "Take one down and pass it around, no more bottles of beer on the wall.\n" +
-      "No more bottles of beer on the wall, no more bottles of beer.\n" +
-      "Go to the store and buy some more, 99 bottles of beer on the wall.";
-  } else {
-    return `${beer} bottles of beer on the wall, ${beer} bottles of beer.\n` +
-      `Take one down and pass it around, ${beer - 1} bottles of beer on the wall.\n` +
-      BottlesOfBeer(beer - 1);
-  }
+	if (beer == 2) {
+		return "2 bottles of beer on the wall, 2 bottles of beer.\n" +
+			"Take one down and pass it around, 1 bottle of beer on the wall.\n" +
+			"1 bottle of beer on the wall, 1 bottle of beer.\n" +
+			"Take one down and pass it around, no more bottles of beer on the wall.\n" +
+			"No more bottles of beer on the wall, no more bottles of beer.\n" +
+			"Go to the store and buy some more, 99 bottles of beer on the wall.";
+	} else {
+		return `${beer} bottles of beer on the wall, ${beer} bottles of beer.\n` +
+			`Take one down and pass it around, ${beer - 1} bottles of beer on the wall.\n` +
+			BottlesOfBeer(beer - 1);
+	}
 }
 
 function HQ9(code) {
-  switch (code) {
-    case "H": return "Hello World!";
-    case "Q": return code;
-    case "9": return BottlesOfBeer(99);
-    default: return undefined;
-  }
+	switch (code) {
+		case "H": return "Hello World!";
+		case "Q": return code;
+		case "9": return BottlesOfBeer(99);
+		default: return undefined;
+	}
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------

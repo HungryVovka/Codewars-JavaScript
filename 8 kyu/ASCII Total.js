@@ -7,16 +7,37 @@
 // -----------------------------------------------------------
 
 function uniTotal(s){
-  var total = 0;
-  s = s.split("");
-  s.forEach(i => {
-    total += i.charCodeAt(0);
-  })
-  return total;
+	var total = 0;
+	s = s.split("");
+	s.forEach(i => {
+		total += i.charCodeAt(0);
+	})
+	return total;
 }
 
 // or
 
 function uniTotal(s){
-  return s.split("").reduce((total, i) => total + i.charCodeAt(0), 0);
+	return s.split("").reduce((total, i) => total + i.charCodeAt(0), 0);
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------
