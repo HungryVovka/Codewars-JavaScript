@@ -24,17 +24,38 @@
 // -----------------------------------------------------------
 
 var isSquare = function(n){
-  if (n < 0){return false};
-  if (n == 0){return true};
-  let n1 = 1, n2 = n;
-  while (n1 + 1 < n2){
-    let n3 = Math.floor((n1 + n2) / 2);
-    if (n3**2 < n){
-      n1 = n3;
-    } else {
-      n2 = n3;
-    }
-  }
-  let answer = (n == n1**2 || n == (n1 + 1)**2);
-  return answer;
+	if (n < 0){return false};
+	if (n == 0){return true};
+	let n1 = 1, n2 = n;
+	while (n1 + 1 < n2){
+		let n3 = Math.floor((n1 + n2) / 2);
+		if (n3**2 < n){
+			n1 = n3;
+		} else {
+			n2 = n3;
+		}
+	}
+	let answer = (n == n1**2 || n == (n1 + 1)**2);
+	return answer;
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------

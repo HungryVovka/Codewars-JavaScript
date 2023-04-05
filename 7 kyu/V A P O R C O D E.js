@@ -12,42 +12,63 @@
 // -----------------------------------------------------------
 
 function vaporcode(s) {
-  var s = s.toUpperCase().split("");
-  var answer = [];
-  for (let i = 0; i < s.length; i++){
-    if (s[i] != " "){
-      answer.push(s[i]);
-    }
-  }
-  return answer.join("  ");
+	var s = s.toUpperCase().split("");
+	var answer = [];
+	for (let i = 0; i < s.length; i++){
+		if (s[i] != " "){
+			answer.push(s[i]);
+		}
+	}
+	return answer.join("  ");
 }
 
 // or
 
 function vaporcode(s) {
-  return s.toUpperCase().replace(/\s+/g, "").split("").join("  ");
+	return s.toUpperCase().replace(/\s+/g, "").split("").join("  ");
 }
 
 // or
 
 function vaporcode(s) {
-  return Array.from(s.replace(/ /g, "").toUpperCase()).join("  ");
+	return Array.from(s.replace(/ /g, "").toUpperCase()).join("  ");
 }
 
 // or
 
 function vaporcode(s) {
-  return s.toUpperCase().match(/[^ ]/g).join("  ");
+	return s.toUpperCase().match(/[^ ]/g).join("  ");
 }
 
 // or
 
 function vaporcode(s) {
-  return s.toUpperCase().match(/\S/g).join("  ");
+	return s.toUpperCase().match(/\S/g).join("  ");
 }
 
 // or
 
 function vaporcode(s) {
-  return s.toUpperCase().split(" ").join("").split("").join("  ");
+	return s.toUpperCase().split(" ").join("").split("").join("  ");
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------

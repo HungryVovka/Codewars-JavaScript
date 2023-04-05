@@ -30,13 +30,34 @@
 // -----------------------------------------------------------
 
 function whoseBicycle(diary1, diary2, diary3) {
-  var arr = [Object.values(diary1), Object.values(diary2), Object.values(diary3)].map(i => i.reduce((a, b) => a + b, 0));
-  var lastindex = arr.lastIndexOf(Math.max(...arr));
-  if (lastindex == 0){
-    return 'I need to buy a bicycle for my first son.';
-  } else if (lastindex == 1){
-    return 'I need to buy a bicycle for my second son.';
-  } else {
-    return 'I need to buy a bicycle for my third son.';
-  }
+	var arr = [Object.values(diary1), Object.values(diary2), Object.values(diary3)].map(i => i.reduce((a, b) => a + b, 0));
+	var lastindex = arr.lastIndexOf(Math.max(...arr));
+	if (lastindex == 0){
+		return 'I need to buy a bicycle for my first son.';
+	} else if (lastindex == 1){
+		return 'I need to buy a bicycle for my second son.';
+	} else {
+		return 'I need to buy a bicycle for my third son.';
+	}
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------

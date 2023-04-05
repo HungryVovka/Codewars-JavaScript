@@ -22,17 +22,38 @@
 // -----------------------------------------------------------
 
 function brightest(colors){
-  let colorId = 0, mostBright = 0;
-  for(let i = 0; i < colors.length; i++){
-    let c = colors[i],
-        r = parseInt(c.slice(1, 3), 16),
-        g = parseInt(c.slice(3, 5), 16),
-        b = parseInt(c.slice(5, 7), 16),
-        bright = Math.max(r,g, b);
-    if (bright > mostBright){
-      mostBright = bright;
-      colorId = i;
-    }
-  }
-  return colors[colorId];
+	let colorId = 0, mostBright = 0;
+	for(let i = 0; i < colors.length; i++){
+		let c = colors[i],
+				r = parseInt(c.slice(1, 3), 16),
+				g = parseInt(c.slice(3, 5), 16),
+				b = parseInt(c.slice(5, 7), 16),
+				bright = Math.max(r,g, b);
+		if (bright > mostBright){
+			mostBright = bright;
+			colorId = i;
+		}
+	}
+	return colors[colorId];
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------
