@@ -11,41 +11,62 @@
 // -----------------------------------------------------------
 
 function isValidWalk(walk) {
-  var e = [], n = [], s = [], w = [];
-  for (let i = 0; i < walk.length; i++){
-    if (walk[i] == 'e'){
-      e.push('e');
-    } 
-    if (walk[i] == 'n'){
-      n.push('n');
-    } 
-    if (walk[i] == 's'){
-      s.push('s');
+    var e = [], n = [], s = [], w = [];
+    for (let i = 0; i < walk.length; i++){
+        if (walk[i] == 'e'){
+            e.push('e');
+        } 
+        if (walk[i] == 'n'){
+            n.push('n');
+        } 
+        if (walk[i] == 's'){
+            s.push('s');
+        }
+        if (walk[i] == 'w'){
+            w.push('w');
+        }
     }
-    if (walk[i] == 'w'){
-      w.push('w');
-    }
-  }
-  return (e.length == w.length) && (n.length == s.length) && walk.length == 10;
+    return (e.length == w.length) && (n.length == s.length) && walk.length == 10;
 }
 
 // or
 
 function isValidWalk(walk) {
-  var e = [], n = [], s = [], w = [];
-  walk.map(i =>{
-    if (i == 'e'){
-      e.push('e');
-    } 
-    if (i == 'n'){
-      n.push('n');
-    } 
-    if (i == 's'){
-      s.push('s');
-    }
-    if (i == 'w'){
-      w.push('w');
-    }
-  })
-  return (e.length == w.length) && (n.length == s.length) && walk.length == 10;
+    var e = [], n = [], s = [], w = [];
+    walk.map(i =>{
+        if (i == 'e'){
+            e.push('e');
+        } 
+        if (i == 'n'){
+            n.push('n');
+        } 
+        if (i == 's'){
+            s.push('s');
+        }
+        if (i == 'w'){
+            w.push('w');
+        }
+    })
+    return (e.length == w.length) && (n.length == s.length) && walk.length == 10;
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------

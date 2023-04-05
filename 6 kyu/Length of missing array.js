@@ -18,33 +18,54 @@
 // -----------------------------------------------------------
 
 function getLengthOfMissingArray(arrayOfArrays) {
-  var leng = (arrayOfArrays || [])
-  .map(i => i ? i.length : 0)
-  .sort((a, b) => a - b);
-  if (leng.includes(0)){
-    return 0;
-  }
-  for (let j = 0; j < leng.length - 1; j++){
-    if (leng[j] + 1 != leng[j + 1]){
-      return leng[j] + 1;
+    var leng = (arrayOfArrays || [])
+        .map(i => i ? i.length : 0)
+        .sort((a, b) => a - b);
+    if (leng.includes(0)){
+        return 0;
     }
-  }
-  return 0;
+    for (let j = 0; j < leng.length - 1; j++){
+        if (leng[j] + 1 != leng[j + 1]){
+            return leng[j] + 1;
+        }
+    }
+    return 0;
 }
 
 // or
 
 function getLengthOfMissingArray(arrayOfArrays) {
-  if (!arrayOfArrays || arrayOfArrays == 0) {
-    return 0;
-  }
-  var leng = arrayOfArrays.map(i => {return i ? i.length : 0});
-  if (leng.includes(0)) {
-    return 0;
-  }
-  let j = Math.max(...leng);
-  while(leng.includes(j)){
-    j -= 1;
-  }
-  return j;
+    if (!arrayOfArrays || arrayOfArrays == 0) {
+        return 0;
+    }
+    var leng = arrayOfArrays.map(i => {return i ? i.length : 0});
+    if (leng.includes(0)) {
+        return 0;
+    }
+    let j = Math.max(...leng);
+    while(leng.includes(j)){
+        j -= 1;
+    }
+    return j;
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------

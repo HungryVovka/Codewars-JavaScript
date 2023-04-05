@@ -15,32 +15,53 @@
 // -----------------------------------------------------------
 
 function likes(names) {
-  if (names.length == 0) {
-    return "no one likes this";
-  } else if (names.length == 1) {
-    return names[0] + " likes this";
-  } else if (names.length == 2) {
-    return names[0] + " and " + names[1] + " like this";
-  } else if (names.length == 3) {
-    return names[0] + ", " + names[1] + " and " + names[2] + " like this";
-  } else {
-    return names[0] + ", " + names[1] + " and " + (names.length - 2) + " others like this";
-  }
+    if (names.length == 0) {
+        return "no one likes this";
+    } else if (names.length == 1) {
+        return names[0] + " likes this";
+    } else if (names.length == 2) {
+        return names[0] + " and " + names[1] + " like this";
+    } else if (names.length == 3) {
+        return names[0] + ", " + names[1] + " and " + names[2] + " like this";
+    } else {
+        return names[0] + ", " + names[1] + " and " + (names.length - 2) + " others like this";
+    }
 }
 
 // or
 
 function likes(names) {
-  names = names || [];
-  switch(names.length){
+    names = names || [];
+    switch(names.length){
     case 0: return 'no one likes this';
-      break;
+        break;
     case 1: return names[0] + ' likes this';
-      break;
+        break;
     case 2: return names[0] + ' and ' + names[1] + ' like this';
-      break;
+        break;
     case 3: return names[0] + ', ' + names[1] + ' and ' + names[2] + ' like this';
-      break;
+        break;
     default: return names[0] + ', ' + names[1] + ' and ' + (names.length - 2) + ' others like this';
-  }
+    }
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------

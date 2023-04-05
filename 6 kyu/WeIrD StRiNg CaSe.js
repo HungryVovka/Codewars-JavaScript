@@ -12,18 +12,39 @@
 // -----------------------------------------------------------
 
 function toWeirdCase(words){
-  let i = 0;
-  let weird = "";
-  for (let j = 0; j < words.length; j++){
-    if (words[j] == " "){
-      i = -1
-      weird += words[j];
-    } else if (i % 2 == 0){
-      weird += words[j].toUpperCase();
-    } else {
-      weird += words[j].toLowerCase();
+    let i = 0;
+    let weird = "";
+    for (let j = 0; j < words.length; j++){
+        if (words[j] == " "){
+            i = -1
+            weird += words[j];
+        } else if (i % 2 == 0){
+            weird += words[j].toUpperCase();
+        } else {
+            weird += words[j].toLowerCase();
+        }
+        i += 1
     }
-    i += 1
-  }
-  return weird;
+    return weird;
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------

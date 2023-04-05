@@ -25,18 +25,39 @@
 // -----------------------------------------------------------
 
 function solution(r) {
-  var roman = {'I': 1,
-               'V': 5,
-               'X': 10,
-               'L': 50,
-               'C': 100,
-               'D': 500,
-               'M': 1000,
-               'IV': 4,
-               'IX': 9,
-               'XL': 40,
-               'XC': 90,
-               'CD': 400,
-               'CM': 900};
-  return r.match(/IV|IX|XC|XL|CD|CM|\w/g).reduce((a, b) => a + roman[b], 0);
+    var roman = {'I': 1,
+                 'V': 5,
+                 'X': 10,
+                 'L': 50,
+                 'C': 100,
+                 'D': 500,
+                 'M': 1000,
+                 'IV': 4,
+                 'IX': 9,
+                 'XL': 40,
+                 'XC': 90,
+                 'CD': 400,
+                 'CM': 900};
+    return r.match(/IV|IX|XC|XL|CD|CM|\w/g).reduce((a, b) => a + roman[b], 0);
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------

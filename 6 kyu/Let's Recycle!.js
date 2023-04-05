@@ -30,29 +30,50 @@
 // -----------------------------------------------------------
 
 function recycle(array) {
-  var paper = [], glass = [], organic = [], plastic = [];
-  array.forEach(i => {
-    if(i.material == "paper" || i.secondMaterial == "paper"){
-      paper.push(i.type);
-    }
-    if(i.material == "glass" || i.secondMaterial == "glass"){
-      glass.push(i.type);
-    }
-    if(i.material == "organic" || i.secondMaterial == "organic"){
-      organic.push(i.type);
-    }
-    if(i.material == "plastic" || i.secondMaterial == "plastic"){
-      plastic.push(i.type);
-    }
-  });
-  return [paper, glass, organic, plastic];
+    var paper = [], glass = [], organic = [], plastic = [];
+    array.forEach(i => {
+        if(i.material == "paper" || i.secondMaterial == "paper"){
+            paper.push(i.type);
+        }
+        if(i.material == "glass" || i.secondMaterial == "glass"){
+            glass.push(i.type);
+        }
+        if(i.material == "organic" || i.secondMaterial == "organic"){
+            organic.push(i.type);
+        }
+        if(i.material == "plastic" || i.secondMaterial == "plastic"){
+            plastic.push(i.type);
+        }
+    });
+    return [paper, glass, organic, plastic];
 }
 
 // or
 
 function recycle(array) {
-  var materials = ["paper", "glass", "organic", "plastic"];
-  return materials.map(i => array
-                       .filter(j => (j.material == i || j.secondMaterial == i))
-                       .map(j => j.type));
+    var materials = ["paper", "glass", "organic", "plastic"];
+    return materials.map(i => array
+        .filter(j => (j.material == i || j.secondMaterial == i))
+        .map(j => j.type));
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------
