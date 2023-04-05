@@ -21,31 +21,52 @@
 // -----------------------------------------------------------
 
 function getCard() {
-  let arr = [];
-  while (arr.length < 5) {
-    let b = "B" + Math.floor((Math.random() * 15) + 1).toString();
-    if (arr.indexOf(b) == -1)
-      arr.push(b);
-  }
-  while (arr.length < 10) {
-    let i = "I" + Math.floor((Math.random() * 15) + 16).toString();
-    if (arr.indexOf(i) == -1)
-      arr.push(i);
-  }
-  while (arr.length < 14) {
-    let n = "N" + Math.floor((Math.random() * 15) + 31).toString();
-    if (arr.indexOf(n) == -1)
-      arr.push(n);
-  }
-  while (arr.length < 19) {
-    let g = "G" + Math.floor((Math.random() * 15) + 46).toString();
-    if (arr.indexOf(g) == -1)
-      arr.push(g);
-  }
-  while (arr.length < 24) {
-    let o = "O" + Math.floor((Math.random() * 15) + 61).toString();
-    if (arr.indexOf(o) == -1)
-      arr.push(o);
-  }
-  return arr;
+    let arr = [];
+    while (arr.length < 5) {
+        let b = "B" + Math.floor((Math.random() * 15) + 1).toString();
+        if (arr.indexOf(b) == -1)
+            arr.push(b);
+    }
+    while (arr.length < 10) {
+        let i = "I" + Math.floor((Math.random() * 15) + 16).toString();
+        if (arr.indexOf(i) == -1)
+            arr.push(i);
+    }
+    while (arr.length < 14) {
+        let n = "N" + Math.floor((Math.random() * 15) + 31).toString();
+        if (arr.indexOf(n) == -1)
+            arr.push(n);
+    }
+    while (arr.length < 19) {
+        let g = "G" + Math.floor((Math.random() * 15) + 46).toString();
+        if (arr.indexOf(g) == -1)
+            arr.push(g);
+    }
+    while (arr.length < 24) {
+        let o = "O" + Math.floor((Math.random() * 15) + 61).toString();
+        if (arr.indexOf(o) == -1)
+            arr.push(o);
+    }
+    return arr;
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------
