@@ -28,9 +28,13 @@ All solution code in this repository
 is the personal property of Vladimir Rukavishnikov
 (vladimirrukavishnikovmail@gmail.com).
 
-Copyright (C) 2022 Vladimir Rukavishnikov
+Copyright (C) 2023 Vladimir Rukavishnikov
 
-This file is part of the HungryVovka/Codewars-JavaScript.
+This file is part of the HungryVovka/Codewars-JavaScript
+(https://github.com/HungryVovka/Codewars-JavaScript)
+
+License is GNU General Public License v3.0
+(https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
 
 You should have received a copy of the GNU Lesser Public License
-along with this code. If not, see [http://www.gnu.org/licenses/].
+along with this code. If not, see http://www.gnu.org/licenses/
