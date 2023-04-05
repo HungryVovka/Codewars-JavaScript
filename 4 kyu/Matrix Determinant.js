@@ -36,11 +36,32 @@
 // -----------------------------------------------------------
 
 function determinant(matrix) {
-  return matrix.length == 1 ? 
-    matrix[0][0] : 
-  matrix.length == 2 ? 
-    matrix[0][0] * matrix[1][1] - matrix[0][1] * matrix[1][0] : 
-  matrix[0].reduce((a, b, c) => 
-                   a + (-1)**(c + 2) * b * determinant(matrix.
-                                                       slice(1).map(m => m.filter((i, j) => c != j))),0);
+    return matrix.length == 1 ? 
+        matrix[0][0] : 
+        matrix.length == 2 ? 
+        matrix[0][0] * matrix[1][1] - matrix[0][1] * matrix[1][0] : 
+        matrix[0].reduce((a, b, c) => 
+            a + (-1)**(c + 2) * b * determinant(matrix.
+                slice(1).map(m => m.filter((i, j) => c != j))),0);
 };
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------

@@ -44,22 +44,42 @@
 // -----------------------------------------------------------
 
 const sumIntervals = (inter) => {
-  let sum = 0;
-  inter = inter.sort((a, b) => a[0] - b[0])
-    .reduce((x, y, ind, arr) => {
+    let sum = 0;
+    inter = inter.sort((a, b) => a[0] - b[0])
+        .reduce((x, y, ind, arr) => {
     let lastx = x.length - 1;
     let front = arr[ind - 1];
     if (front != undefined && arr.length > 1) {
-      if (x[lastx] > y[0]) {
-        if (x[lastx] <= y[1]) {
-          x[lastx] = y[1];
-        }
-      } else x.push(...y);
+        if (x[lastx] > y[0]) {
+            if (x[lastx] <= y[1]) {
+                x[lastx] = y[1];
+            }
+        } else x.push(...y);
     } else x.push(...y);
     return x;}, new Array);
-  
-  for (let i = 0; i < inter.length - 1; i += 2) {
-    sum += (inter[i + 1] - inter[i]);
-  }
-  return sum;
+    for (let i = 0; i < inter.length - 1; i += 2) {
+        sum += (inter[i + 1] - inter[i]);
+    }
+    return sum;
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------

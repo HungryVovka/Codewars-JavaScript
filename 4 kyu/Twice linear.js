@@ -20,17 +20,38 @@
 // -----------------------------------------------------------
 
 function dblLinear(n) {
-  var arr = [1];
-  var y = 0;
-  var z = 0;
-  for(var i = 1; i <= n; i++){
-    arr[i] = Math.min(2*arr[y] + 1, 3*arr[z] + 1);
-    if (arr[i] == 2*arr[y] + 1){
-      y += 1;
+    var arr = [1];
+    var y = 0;
+    var z = 0;
+    for(var i = 1; i <= n; i++){
+        arr[i] = Math.min(2*arr[y] + 1, 3*arr[z] + 1);
+        if (arr[i] == 2*arr[y] + 1){
+            y += 1;
+        }
+        if (arr[i] == 3*arr[z] + 1){
+            z += 1;
+        }
     }
-    if (arr[i] == 3*arr[z] + 1){
-      z += 1;
-    }
-  }
-  return arr[n];
+    return arr[n];
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------

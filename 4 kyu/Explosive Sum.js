@@ -33,26 +33,47 @@
 var esum = [];
 
 function explosive (a, b){
-  if (a < 0){
-    return 0;
-  }
-  if (a == 0){
-    return 1;
-  }
-  if (b == 0){
-    return 0;
-  }
-  if (esum[a] == undefined){
-    esum[a] = [];
-  }
-  var answer = esum[a][b];
-  if (typeof answer != 'number') {
-    answer = explosive(a - b, b) + explosive(a, b - 1);
-    esum[a][b] = answer;
-  };
-  return answer;
+    if (a < 0){
+        return 0;
+    }
+    if (a == 0){
+        return 1;
+    }
+    if (b == 0){
+        return 0;
+    }
+    if (esum[a] == undefined){
+        esum[a] = [];
+    }
+    var answer = esum[a][b];
+    if (typeof answer != 'number') {
+        answer = explosive(a - b, b) + explosive(a, b - 1);
+        esum[a][b] = answer;
+    };
+    return answer;
 };
 
 function sum (n){
-  return explosive(n, n);
+    return explosive(n, n);
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------

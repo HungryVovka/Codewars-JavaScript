@@ -33,37 +33,56 @@
 // -----------------------------------------------------------
 
 function formatDuration (seconds){
-  if (seconds == 0){
-    return "now";
-  }
-  var clock = ["year", "day", "hour", "minute", "second"];
-  
-  var year = parseInt(parseInt(parseInt(parseInt(seconds /60) / 60) /24) /365);
-  var day = parseInt(parseInt(parseInt(seconds/ 60) / 60) / 24) % 365;
-  var hour = parseInt(parseInt(seconds / 60) / 60) % 24;
-  var minute = parseInt(seconds / 60) % 60;
-  var sec = seconds % 60;
-  
-  var clockInt = [year, day, hour, minute, sec];
-  var clockadd = [];
-  for (var i = 0 ; i < clockInt.length; i++){
-    if (clockInt[i] == 1){
-      clockadd.push(clockInt[i] + " " + clock[i]);
-    } else if (clockInt[i] >= 2){
-      clockadd.push(clockInt[i] + " " + clock[i] + "s");
+    if (seconds == 0){
+        return "now";
     }
-  }
-  var clockface = "";
-  for (var i = 0; i < clockadd.length; i++){
-    if (i == clockadd.length - 2){
-      clockface += clockadd[i] + " and " + clockadd[i+1];
-      break;
+    var clock = ["year", "day", "hour", "minute", "second"];
+    var year = parseInt(parseInt(parseInt(parseInt(seconds /60) / 60) /24) /365);
+    var day = parseInt(parseInt(parseInt(seconds/ 60) / 60) / 24) % 365;
+    var hour = parseInt(parseInt(seconds / 60) / 60) % 24;
+    var minute = parseInt(seconds / 60) % 60;
+    var sec = seconds % 60;
+    var clockInt = [year, day, hour, minute, sec];
+    var clockadd = [];
+    for (var i = 0 ; i < clockInt.length; i++){
+        if (clockInt[i] == 1){
+            clockadd.push(clockInt[i] + " " + clock[i]);
+        } else if (clockInt[i] >= 2){
+            clockadd.push(clockInt[i] + " " + clock[i] + "s");
+        }
     }
-    if (i != clockadd.length - 1){
-      clockface += clockadd[i] + ", ";
-    } else {
-      clockface += clockadd[i];
+    var clockface = "";
+    for (var i = 0; i < clockadd.length; i++){
+        if (i == clockadd.length - 2){
+            clockface += clockadd[i] + " and " + clockadd[i+1];
+            break;
+        }
+        if (i != clockadd.length - 1){
+            clockface += clockadd[i] + ", ";
+        } else {
+            clockface += clockadd[i];
+        }
     }
-  }
-  return clockface;
+    return clockface;
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------

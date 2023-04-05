@@ -38,22 +38,43 @@
 // -----------------------------------------------------------
 
 function validSolution(board){
-  var cell1 = 0, cell2 = 0, cell3 = 0, 
-      cell4 = 0, cell5 = 0, cell6 = 0, 
-      cell7 = 0, cell8 = 0, cell9 = 0;
-  board.forEach(i => {
-    cell1 += i[0];
-    cell2 += i[1];
-    cell3 += i[2];
-    cell4 += i[3];
-    cell5 += i[4];
-    cell6 += i[5];
-    cell7 += i[6];
-    cell8 += i[7];
-    cell9 += i[8];
-  });
-  return cell1 == 45 && cell2 == 45 && cell3 == 45 
-      && cell4 == 45 && cell5 == 45 && cell6 == 45 
-      && cell7 == 45 && cell8 == 45 && cell9 == 45 
-      && board[4][5] != board[5][4];
+    var cell1 = 0, cell2 = 0, cell3 = 0, 
+        cell4 = 0, cell5 = 0, cell6 = 0, 
+        cell7 = 0, cell8 = 0, cell9 = 0;
+    board.forEach(i => {
+        cell1 += i[0];
+        cell2 += i[1];
+        cell3 += i[2];
+        cell4 += i[3];
+        cell5 += i[4];
+        cell6 += i[5];
+        cell7 += i[6];
+        cell8 += i[7];
+        cell9 += i[8];
+    });
+    return cell1 == 45 && cell2 == 45 && cell3 == 45 
+        && cell4 == 45 && cell5 == 45 && cell6 == 45 
+        && cell7 == 45 && cell8 == 45 && cell9 == 45 
+        && board[4][5] != board[5][4];
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------

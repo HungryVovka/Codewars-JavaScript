@@ -21,22 +21,43 @@
 // -----------------------------------------------------------
 
 function nextBigger(n){
-  var bigger = -1;
-  var digits = n.toString().split("");
-  for (let i = digits.length - 1; i >= 0; i--) {
-    if (digits[i] < digits[i + 1]){
-      var nextdig = digits.splice(i + 1).sort();
-      for (let j = 0; j < nextdig.length; j++){
-        if (nextdig[j] > digits[i]){
-          digits[i] = nextdig[j] - digits[i];
-          nextdig[j] -= digits[i];
-          digits[i] += nextdig[j];
-          bigger = Number(digits.concat(nextdig).join(""), 10);
-          i = 0;
-          break;
+    var bigger = -1;
+    var digits = n.toString().split("");
+    for (let i = digits.length - 1; i >= 0; i--) {
+        if (digits[i] < digits[i + 1]){
+            var nextdig = digits.splice(i + 1).sort();
+            for (let j = 0; j < nextdig.length; j++){
+                if (nextdig[j] > digits[i]){
+                    digits[i] = nextdig[j] - digits[i];
+                    nextdig[j] -= digits[i];
+                    digits[i] += nextdig[j];
+                    bigger = Number(digits.concat(nextdig).join(""), 10);
+                    i = 0;
+                    break;
+                }
+            }
         }
-      }
     }
-  }
-  return bigger;
+    return bigger;
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------
