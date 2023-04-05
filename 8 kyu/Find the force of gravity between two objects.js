@@ -42,22 +42,43 @@
 // -----------------------------------------------------------
 
 var converter = {
-  "m": 1,
-  "cm": 1e-2,
-  "mm": 1e-3,
-  "μm": 1e-6,
-  "ft": 0.3048,
-  "kg": 1,
-  "g": 1e-3,
-  "mg": 1e-6,
-  "μg": 1e-9,
-  "lb": 0.453592,
-  "G": 6.67e-11,
+	"m": 1,
+	"cm": 1e-2,
+	"mm": 1e-3,
+	"μm": 1e-6,
+	"ft": 0.3048,
+	"kg": 1,
+	"g": 1e-3,
+	"mg": 1e-6,
+	"μg": 1e-9,
+	"lb": 0.453592,
+	"G": 6.67e-11,
 };
 
 function solution ([a1, b1, r1], [a2, b2, r2]){
-  return converter["G"] * 
-    a1 * converter[a2] * 
-    b1 * converter[b2] / 
-    (r1 * converter[r2])**2;
+	return converter["G"] * 
+		a1 * converter[a2] * 
+		b1 * converter[b2] / 
+		(r1 * converter[r2])**2;
 };
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------
