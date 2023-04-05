@@ -21,18 +21,39 @@
 // -----------------------------------------------------------
 
 function validateHello(greetings) {
-  var greet = ["hello", "ciao", "salut", "hallo", "hola", "ahoj", "czesc"];
-  greetings = greetings.toLowerCase();
-  for (let i = 0; i < greet.length; i++){
-    if (greetings.includes(greet[i])){
-      return true;
-    }
-  }
-  return false;
+	var greet = ["hello", "ciao", "salut", "hallo", "hola", "ahoj", "czesc"];
+	greetings = greetings.toLowerCase();
+	for (let i = 0; i < greet.length; i++){
+		if (greetings.includes(greet[i])){
+			return true;
+		}
+	}
+	return false;
 }
 
 // or
 
 function validateHello(greetings) {
-  return /h[ae]llo|ciao|salut|hola|ahoj|czesc/i.test(greetings);
+	return /h[ae]llo|ciao|salut|hola|ahoj|czesc/i.test(greetings);
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------
