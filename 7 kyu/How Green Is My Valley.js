@@ -60,30 +60,51 @@
 // -----------------------------------------------------------
 
 function makeValley(arr) {
-  var newArr = arr.slice().sort((a, b) => a - b);
-  var arrl = newArr.length;
-  var answer = [];
-  for (let i = 0; i < arrl; i++){
-    if (i % 2 == 0){
-      answer.unshift(newArr[i]);
-    } else {
-      answer.push(newArr[i]);
-    }
-  }
-  return arrl % 2 == 0 ? answer.reverse() : answer;
+	var newArr = arr.slice().sort((a, b) => a - b);
+	var arrl = newArr.length;
+	var answer = [];
+	for (let i = 0; i < arrl; i++){
+		if (i % 2 == 0){
+			answer.unshift(newArr[i]);
+		} else {
+			answer.push(newArr[i]);
+		}
+	}
+	return arrl % 2 == 0 ? answer.reverse() : answer;
 }
 
 // or
 
 function makeValley(arr) {
-  arr.sort((a, b) => b - a);
-  var arr1 = [], arr2 = [];
-  for (let i = 0; i < arr.length; i++){
-    if (i % 2 == 0){
-      arr1.unshift(arr[i]);
-    } else {
-      arr2.push(arr[i]);
-    }
-  }
-  return arr2.concat(arr1).reverse();
+	arr.sort((a, b) => b - a);
+	var arr1 = [], arr2 = [];
+	for (let i = 0; i < arr.length; i++){
+		if (i % 2 == 0){
+			arr1.unshift(arr[i]);
+		} else {
+			arr2.push(arr[i]);
+		}
+	}
+	return arr2.concat(arr1).reverse();
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------

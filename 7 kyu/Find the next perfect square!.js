@@ -14,16 +14,37 @@
 // -----------------------------------------------------------
 
 function findNextSquare(sq) {
-  if (sq % sq**0.5 == 0 && sq != 0){
-    return Math.pow((Math.sqrt(sq) + 1), 2);
-  } else{
-    return -1;
-  }
+    if (sq % sq**0.5 == 0 && sq != 0){
+        return Math.pow((Math.sqrt(sq) + 1), 2);
+    } else {
+        return -1;
+    }
 }
 
 // or
 
 function findNextSquare(sq) {
-  let i = sq**0.5;
-  return i % 1 ? -1 : (i + 1)**2;
+    let i = sq**0.5;
+    return i % 1 ? -1 : (i + 1)**2;
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------
