@@ -42,21 +42,42 @@
 // Hint: Use \n in string to jump to next line
 
 function pattern(n){
-  var patt = [];
-  for (let i = 1; i <= n; i++){
-    patt.push(Array(i + 1).join(i));
-  }
-  return patt.join("\n");
+    var patt = [];
+    for (let i = 1; i <= n; i++){
+        patt.push(Array(i + 1).join(i));
+    }
+    return patt.join("\n");
 }
 
 // or
 
 function pattern(n){
-  if (n > 1){
-    return pattern(n - 1) + "\n" + `${n}`.repeat(n);
-  } else if (n == 1){
-    return "1";
-  } else {
-    return "";
-  }
+    if (n > 1){
+        return pattern(n - 1) + "\n" + `${n}`.repeat(n);
+    } else if (n == 1){
+        return "1";
+    } else {
+        return "";
+    }
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------

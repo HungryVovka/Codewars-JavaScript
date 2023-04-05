@@ -19,30 +19,51 @@
 // -----------------------------------------------------------
 
 function openOrSenior(data){
-  var arr = [];
-  var a = 'Open', b = 'Senior';
-  for (var i = 0; i < data.length; i++){
-    if (data[i][0] >= 55 && data[i][1] > 7){
-      arr.push(b);
-    } else {
-      arr.push(a);
+    var arr = [];
+    var a = 'Open', b = 'Senior';
+    for (var i = 0; i < data.length; i++){
+        if (data[i][0] >= 55 && data[i][1] > 7){
+            arr.push(b);
+        } else {
+            arr.push(a);
+        }
     }
-  }
-  return arr;
+    return arr;
 }
 
 // or
 
 function openOrSenior(data){
-  var arr = [];
-  for (var i = 0; i < data.length; i++){
-    arr[i] = (data[i][0] >= 55 && data[i][1] > 7) ? 'Senior' : 'Open';
-  }
-  return arr;
+    var arr = [];
+    for (var i = 0; i < data.length; i++){
+        arr[i] = (data[i][0] >= 55 && data[i][1] > 7) ? 'Senior' : 'Open';
+    }
+    return arr;
 }
 
 // or
 
 function openOrSenior(data){
-  return data.map(([a, b]) => (a > 54 && b > 7) ? 'Senior' : 'Open');
+    return data.map(([a, b]) => (a > 54 && b > 7) ? 'Senior' : 'Open');
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------

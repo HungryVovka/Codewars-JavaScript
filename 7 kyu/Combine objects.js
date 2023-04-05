@@ -13,16 +13,37 @@
 // -----------------------------------------------------------
 
 function combine(){
-  let combineObj = {};
-  let arr = [...arguments];
-  for(let i = 0; i < arguments.length; i++){
-    for(let j in arguments[i]){
-      if (!combineObj[j]){
-        combineObj[j] = arguments[i][j];
-      } else {
-        combineObj[j] = combineObj[j] + arguments[i][j];
-      }
+    let combineObj = {};
+    let arr = [...arguments];
+    for(let i = 0; i < arguments.length; i++){
+        for(let j in arguments[i]){
+            if (!combineObj[j]){
+                combineObj[j] = arguments[i][j];
+            } else {
+                combineObj[j] = combineObj[j] + arguments[i][j];
+            }
+        }
     }
-  }
-  return combineObj;
+    return combineObj;
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------

@@ -19,27 +19,48 @@
 // -----------------------------------------------------------
 
 function dontGiveMeFive(start, end){
-  var arr = [];
-  while (start <= end){
-    let i = String(start);
-    if (i.includes("5")){
-      start += 1;
-    } else {
-      arr.push(i);
-      start += 1;
+    var arr = [];
+    while (start <= end){
+        let i = String(start);
+        if (i.includes("5")){
+            start += 1;
+        } else {
+            arr.push(i);
+            start += 1;
+        }
     }
-  }
-  return arr.length;
+    return arr.length;
 }
 
 // or
 
 function dontGiveMeFive(start, end){
-  var nofive = 0;
-  for (let i = start; i <= end; i++){
-    if (!/5/.test(i)){
-      nofive += 1;
+    var nofive = 0;
+    for (let i = start; i <= end; i++){
+        if (!/5/.test(i)){
+            nofive += 1;
+        }
     }
-  }
-  return nofive;
+    return nofive;
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------
