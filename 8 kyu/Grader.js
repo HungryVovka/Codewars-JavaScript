@@ -1,8 +1,8 @@
 // -----------------------------------------------------------
 // Create a function that takes a number as an argument and returns a grade based on that number.
 // 
-// Score									        Grade
-// Anything greater than 1 or less than 0.6			                        "F"
+// Score											Grade
+// Anything greater than 1 or less than 0.6			"F"
 // 0.9 or greater									"A"
 // 0.8 or greater									"B"
 // 0.7 or greater									"C"
@@ -21,11 +21,32 @@
 var grade = ["A", "B", "C", "D", "F"];
 
 function grader(score){
-  switch (true){
-      case (1 >= score && score >= 0.9): return grade[0]; break;
-      case (0.9 > score && score >= 0.8): return grade[1]; break;
-      case (0.8 > score && score >= 0.7): return grade[2]; break;
-      case (0.7 > score && score >= 0.6): return grade[3]; break;
-      default: return grade[4];
-  }
+	switch (true){
+		case (1 >= score && score >= 0.9): return grade[0]; break;
+		case (0.9 > score && score >= 0.8): return grade[1]; break;
+		case (0.8 > score && score >= 0.7): return grade[2]; break;
+		case (0.7 > score && score >= 0.6): return grade[3]; break;
+		default: return grade[4];
+	}
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------

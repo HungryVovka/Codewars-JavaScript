@@ -15,33 +15,54 @@
 // -----------------------------------------------------------
 
 function generateRange(start, end, step) {
-    var range = [];
-    var typeofStart = typeof start;
-    var typeofEnd = typeof end;
-    typeof step == "undefined" && (step = 1);
-    if (end < start) {step = -step};
-    if (typeofStart == "number") {
-      while (step > 0 ? end >= start : end <= start) {
-        range.push(start);
-        start += step;
-      }
-    } else if (typeofStart == "string") {
-      start = start.charCodeAt(0);
-      end = end.charCodeAt(0);
-      while (step > 0 ? end >= start : end <= start) {
-        range.push(String.fromCharCode(start));
-        start += step;
-      }
-    }
-    return range;
+		var range = [];
+		var typeofStart = typeof start;
+		var typeofEnd = typeof end;
+		typeof step == "undefined" && (step = 1);
+		if (end < start) {step = -step};
+		if (typeofStart == "number") {
+			while (step > 0 ? end >= start : end <= start) {
+				range.push(start);
+				start += step;
+			}
+		} else if (typeofStart == "string") {
+			start = start.charCodeAt(0);
+			end = end.charCodeAt(0);
+			while (step > 0 ? end >= start : end <= start) {
+				range.push(String.fromCharCode(start));
+				start += step;
+			}
+		}
+		return range;
 }
 
 // or
 
 function generateRange(min, max, step){
-  var arr = [];
-  for (let i = min; i <= max; i += step) {
-    arr.push(i);
-  }
-  return arr;
+	var arr = [];
+	for (let i = min; i <= max; i += step) {
+		arr.push(i);
+	}
+	return arr;
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------
