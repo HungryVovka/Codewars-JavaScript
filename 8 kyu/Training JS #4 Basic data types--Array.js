@@ -31,25 +31,46 @@
 // -----------------------------------------------------------
 
 function getLength(arr){
-  //return length of arr
-  return arr.length;
+	//return length of arr
+	return arr.length;
 }
 function getFirst(arr){
-  //return the first element of arr
-  return arr[0];
+	//return the first element of arr
+	return arr[0];
 }
 function getLast(arr){
-  //return the last element of arr
-  return arr[arr.length - 1];
+	//return the last element of arr
+	return arr[arr.length - 1];
 }
 function pushElement(arr){
-  var el = 1;
-  //push el to arr
-  arr.push(el)
-  return arr;
+	var el = 1;
+	//push el to arr
+	arr.push(el)
+	return arr;
 }
 function popElement(arr){
-  //pop an element from arr
-  arr.pop();
-  return arr;
+	//pop an element from arr
+	arr.pop();
+	return arr;
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------

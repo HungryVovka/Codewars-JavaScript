@@ -14,38 +14,59 @@
 // -----------------------------------------------------------
 
 let v1 = 50,
-    v2 = 100,
-    v3 = 150,
-    v4 = 200,
-    v5 = 2,
-    v6 = 250;
+	v2 = 100,
+	v3 = 150,
+	v4 = 200,
+	v5 = 2,
+	v6 = 250;
 
 function equal1(){
-  let a = v1,   
-      b = v1;   
-  return a + b;
+	let a = v1,   
+			b = v1;   
+	return a + b;
 }
 
 function equal2(){
-  let a = v3, 
-      b = v1; 
-  return a - b;
+	let a = v3, 
+			b = v1; 
+	return a - b;
 }
 
 function equal3(){
-  let a = v1, 
-      b = v5;
-  return a * b;
+	let a = v1, 
+			b = v5;
+	return a * b;
 }
 
 function equal4(){
-  let a = v4,
-      b = v5;
-  return a / b;
+	let a = v4,
+			b = v5;
+	return a / b;
 }
 
 function equal5(){
-  let a = v2,
-      b = v6;
-  return a % b;
+	let a = v2,
+			b = v6;
+	return a % b;
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------

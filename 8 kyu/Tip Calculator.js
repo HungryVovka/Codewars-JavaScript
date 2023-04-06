@@ -19,14 +19,35 @@
 // -----------------------------------------------------------
 
 var tips = {
-  "terrible" : 0.0,
-  "poor" : 0.05,
-  "good" : 0.1,
-  "great" : 0.15,
-  "excellent" : 0.2,
+	"terrible" : 0.0,
+	"poor" : 0.05,
+	"good" : 0.1,
+	"great" : 0.15,
+	"excellent" : 0.2,
 };
 
 function calculateTip(amount, rating) {
-  rating = rating.toLowerCase();
-  return rating in tips ? Math.ceil(tips[rating] * amount) : "Rating not recognised";
+	rating = rating.toLowerCase();
+	return rating in tips ? Math.ceil(tips[rating] * amount) : "Rating not recognised";
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------

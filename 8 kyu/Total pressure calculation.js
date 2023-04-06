@@ -22,12 +22,33 @@
 // -----------------------------------------------------------
 
 const solution = (molarMass1, molarMass2, givenMass1, givenMass2, volume, temp) => {
-  var n1 = (givenMass1 / molarMass1); 
-  var n2 = (givenMass2 / molarMass2);
-  var R = 0.082;
-  var tempKelvin = temp + 273.15;
-  var P1 = (n1 * R * tempKelvin) / volume;
-  var P2 = (n2 * R * tempKelvin) / volume;
-  var P = P1 + P2;
-  return P;
+	var n1 = (givenMass1 / molarMass1); 
+	var n2 = (givenMass2 / molarMass2);
+	var R = 0.082;
+	var tempKelvin = temp + 273.15;
+	var P1 = (n1 * R * tempKelvin) / volume;
+	var P2 = (n2 * R * tempKelvin) / volume;
+	var P = P1 + P2;
+	return P;
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------

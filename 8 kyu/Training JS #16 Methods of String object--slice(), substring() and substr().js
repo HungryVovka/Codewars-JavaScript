@@ -115,20 +115,41 @@
 // -----------------------------------------------------------
 
 function cutIt(arr){
-  let minL = Infinity;
-  for (let i = 0; i < arr.length; i++){
-    if (arr[i].length < minL) minL = arr[i].length;
-  }
-  for (let j = 0; j < arr.length; j++){
-    arr[j] = arr[j].slice(0, minL);
-  }
-  return arr;
+	let minL = Infinity;
+	for (let i = 0; i < arr.length; i++){
+		if (arr[i].length < minL) minL = arr[i].length;
+	}
+	for (let j = 0; j < arr.length; j++){
+		arr[j] = arr[j].slice(0, minL);
+	}
+	return arr;
 }
 
 // or
 
 function cutIt(arr){
-  let minL = Math.min(...arr.map(i => i.length));
-  arr = arr.map(j => j.slice(0, minL));
-  return arr;
+	let minL = Math.min(...arr.map(i => i.length));
+	arr = arr.map(j => j.slice(0, minL));
+	return arr;
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------
