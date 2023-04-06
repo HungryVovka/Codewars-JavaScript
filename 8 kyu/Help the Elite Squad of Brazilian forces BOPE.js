@@ -20,20 +20,41 @@
 // -----------------------------------------------------------
 
 function magNumber(info){
-  if (/PT92/.test(info)) return Math.ceil((info[1] * 3) / 17);
-  if (/M4A1/.test(info)) return Math.ceil((info[1] * 3) / 30);
-  if (/M16A2/.test(info)) return Math.ceil((info[1] * 3) / 30);
-  if (/PSG1/.test(info)) return Math.ceil((info[1] * 3) / 5);
+	if (/PT92/.test(info)) return Math.ceil((info[1] * 3) / 17);
+	if (/M4A1/.test(info)) return Math.ceil((info[1] * 3) / 30);
+	if (/M16A2/.test(info)) return Math.ceil((info[1] * 3) / 30);
+	if (/PSG1/.test(info)) return Math.ceil((info[1] * 3) / 5);
 }
 
 // or
 
 function magNumber(info){
-  var weapons = {
-    "PT92": 17, 
-    "M4A1": 30, 
-    "M16A2": 30, 
-    "PSG1": 5,
-  }
-  return Math.ceil(info[1] * 3 / weapons[info[0]]);
+	var weapons = {
+		"PT92": 17, 
+		"M4A1": 30, 
+		"M16A2": 30, 
+		"PSG1": 5,
+	}
+	return Math.ceil(info[1] * 3 / weapons[info[0]]);
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------

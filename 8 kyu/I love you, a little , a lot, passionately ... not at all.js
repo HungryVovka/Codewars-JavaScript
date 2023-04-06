@@ -18,10 +18,31 @@
 // -----------------------------------------------------------
 
 function howMuchILoveYou(nbPetals) {
-  if (nbPetals == 1 || (nbPetals % 6) == 1) return "I love you";
-  if (nbPetals == 2 || (nbPetals % 6) == 2) return "a little";
-  if (nbPetals == 3 || (nbPetals % 6) == 3) return "a lot";
-  if (nbPetals == 4 || (nbPetals % 6) == 4) return "passionately";
-  if (nbPetals == 5 || (nbPetals % 6) == 5) return "madly";
-  if (nbPetals == 6 || (nbPetals % 6) == 0) return "not at all";
+	if (nbPetals == 1 || (nbPetals % 6) == 1) return "I love you";
+	if (nbPetals == 2 || (nbPetals % 6) == 2) return "a little";
+	if (nbPetals == 3 || (nbPetals % 6) == 3) return "a lot";
+	if (nbPetals == 4 || (nbPetals % 6) == 4) return "passionately";
+	if (nbPetals == 5 || (nbPetals % 6) == 5) return "madly";
+	if (nbPetals == 6 || (nbPetals % 6) == 0) return "not at all";
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------
