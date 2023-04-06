@@ -38,46 +38,67 @@
 // -----------------------------------------------------------
 
 class Labrador {
-  constructor(n, a, g, m){
-    this.age = a;
-    this.gender = g;
-    this.legs = 4;
-    this.loyal = true;
-    this.master = m;
-    this.name = n;
-    this.size = "Large";
-    this.species = "Labrador";
-  }
+	constructor(n, a, g, m){
+		this.age = a;
+		this.gender = g;
+		this.legs = 4;
+		this.loyal = true;
+		this.master = m;
+		this.name = n;
+		this.size = "Large";
+		this.species = "Labrador";
+	}
 }
 
 // or
 
 class Labrador {
-  constructor(n, a, g, m){
-    let t = this;
-    t.age = a;
-    t.gender = g;
-    t.legs = 4;
-    t.loyal = true;
-    t.master = m;
-    t.name = n;
-    t.size = "Large";
-    t.species = "Labrador";
-  }
+	constructor(n, a, g, m){
+		let t = this;
+		t.age = a;
+		t.gender = g;
+		t.legs = 4;
+		t.loyal = true;
+		t.master = m;
+		t.name = n;
+		t.size = "Large";
+		t.species = "Labrador";
+	}
 }
 
 // or
 
 class Labrador {
-  constructor(n, a, g, m){
-    return Object.assign(this, new Dog(n, a, g, "Labrador", "Large", m, true));
-  }
+	constructor(n, a, g, m){
+		return Object.assign(this, new Dog(n, a, g, "Labrador", "Large", m, true));
+	}
 }
 
 // or
 
 class Labrador extends Dog {
-  constructor(n, a, g, m, sp = "Labrador", sz = "Large", l = true){
-    super(n, a, g, sp, sz, m, l);
-  }
+	constructor(n, a, g, m, sp = "Labrador", sz = "Large", l = true){
+		super(n, a, g, sp, sz, m, l);
+	}
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------

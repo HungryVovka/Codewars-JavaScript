@@ -36,10 +36,31 @@
 // -----------------------------------------------------------
 
 function isValid(formula){
-  if (formula.includes(1) && formula.includes(2)) return false;
-  if (formula.includes(3) && formula.includes(4)) return false;
-  if (formula.includes(5) && !formula.includes(6)) return false;
-  if (formula.includes(6) && !formula.includes(5)) return false;
-  if (!formula.includes(7) && !formula.includes(8)) return false;
-  return true;
+	if (formula.includes(1) && formula.includes(2)) return false;
+	if (formula.includes(3) && formula.includes(4)) return false;
+	if (formula.includes(5) && !formula.includes(6)) return false;
+	if (formula.includes(6) && !formula.includes(5)) return false;
+	if (!formula.includes(7) && !formula.includes(8)) return false;
+	return true;
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------
