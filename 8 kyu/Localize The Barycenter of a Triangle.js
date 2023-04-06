@@ -27,9 +27,30 @@
 // -----------------------------------------------------------
 
 function barTriang(p1, p2, p3){
-  let xo = (p1[0] + p2[0] + p3[0]) / 3;
-  let yo = (p1[1] + p2[1] + p3[1]) / 3;
-  xo = +xo.toFixed(4);
-  yo = +yo.toFixed(4);
-  return [xo, yo];
+	let xo = (p1[0] + p2[0] + p3[0]) / 3;
+	let yo = (p1[1] + p2[1] + p3[1]) / 3;
+	xo = +xo.toFixed(4);
+	yo = +yo.toFixed(4);
+	return [xo, yo];
 }
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2022 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-JavaScript
+// (https://github.com/HungryVovka/Codewars-JavaScript)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-JavaScript/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------
