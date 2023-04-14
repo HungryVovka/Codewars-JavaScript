@@ -12,11 +12,15 @@
 // -----------------------------------------------------------
 
 function basicOp(operation, value1, value2){
+	if (operation == "/" && value2 == 0.0){
+		return 0;
+	}
 	switch(operation){
 		case ("+"): return (value1 + value2);
 		case ("-"): return (value1 - value2);
 		case ("*"): return (value1 * value2);
 		case ("/"): return (value1 / value2);
+		default: return 0;
 	}
 }
 
