@@ -20,13 +20,13 @@
 // Good luck!
 // -----------------------------------------------------------
 
-function sixToast(num) {
-	return num >= 6 ? num - 6 : num;
+function sixToast(num){
+	return num >= 6 ? num - 6 : 6 - num;
 }
 
 // or
 
-function sixToast(num) {
+function sixToast(num){
 	return Math.abs(num - 6);
 }
 
