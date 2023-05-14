@@ -8,7 +8,7 @@
 // -----------------------------------------------------------
 
 function twiceAsOld(dadYearsOld, sonYearsOld) {
-	let age = dadYearsOld - sonYearsOld * 2
+	let age = dadYearsOld - sonYearsOld * 2;
 	if ((age) >= 0){
 		return age;
 	} else {
