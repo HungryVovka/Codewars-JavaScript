@@ -11,21 +11,12 @@
 // [1,2,2,3,3,3,4,3,3,3,2,2,1] should return 4, because it appears 1 time (which is odd).
 // -----------------------------------------------------------
 
-function findOdd(A) {
-    let result, num = 0;
-    A = A.sort();
-    for (let i = 0; i < A.length; i++) {
-        if (A[i] == A[i+1]) {
-            num++;
-        } else {
-            num++;
-            if (num % 2 != 0) {
-                result = A[i];
-                break;
-            }
-        }
-    }
-    return result;
+function findOdd(seq){
+	for (let i = 0; i < seq.length; i++){
+		if (seq.filter(j => j === seq[i]).length % 2 !== 0){
+			return seq[i];
+		}
+	}
 }
 
 // -----------------------------------------------------------
