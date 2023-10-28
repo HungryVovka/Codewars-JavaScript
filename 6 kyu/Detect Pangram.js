@@ -6,7 +6,7 @@
 // -----------------------------------------------------------
 
 function isPangram(sentence){
-	let engAlphabet = "ABCDEFJHIJKLMNOPQRSTUVWXYZ";
+	let engAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	sentence = sentence.toUpperCase();
 	for (let i of engAlphabet){
 		if (sentence.indexOf(i) == -1){
