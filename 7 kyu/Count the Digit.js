@@ -23,8 +23,8 @@
 function nbDig(n, d) {
     var count = 0;
     for (let i = 0; i <= n; i++){
-        var SQR = (i * i + "").split("");
-        SQR.forEach((j) => {
+        var square = (i * i + "").split("");
+        square.forEach((j) => {
             if (j == d){
                 return count++;
             } else {
