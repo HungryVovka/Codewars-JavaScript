@@ -6,13 +6,13 @@
 // Note: if there is nothing to sum, the sum is default to 0.
 // -----------------------------------------------------------
 
-function positiveSum(arr) {
+function positiveSum(arr){
 	var pos = 0;
 	arr.forEach(a => {
 		if (a > 0){
 			pos += a;
 		}
-	})
+	});
 	return pos;
 }
 
