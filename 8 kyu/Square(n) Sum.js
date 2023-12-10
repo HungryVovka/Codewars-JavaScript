@@ -6,9 +6,9 @@
 
 function squareSum(numbers){
 	var sums = 0;
-	for (i = 0; i < numbers.length; i++){
-		var number = numbers[i] * numbers[i];
-		sums = sums + number;
+	for (let i = 0; i < numbers.length; i++){
+		var num = numbers[i] * numbers[i];
+		sums = sums + num;
 	}
 	return sums;
 }

@@ -26,8 +26,8 @@ function points(games) {
 		} else if (g[0] == g[2]){
 			score = score +1
 		}
-	})
-	return score
+	});
+	return score;
 }
 
 // -----------------------------------------------------------
